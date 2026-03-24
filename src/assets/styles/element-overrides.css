@@ -1,0 +1,59 @@
+:root {
+  --el-color-primary: var(--brand-500);
+  --el-color-primary-light-3: #3353c1;
+  --el-color-primary-light-5: #4b6bd6;
+  --el-color-primary-light-7: #6f8ae7;
+  --el-color-primary-light-8: #8ea3ef;
+  --el-color-primary-light-9: #c9d5fb;
+  --el-border-radius-base: 10px;
+}
+.el-button--primary {
+  box-shadow: 0 6px 16px rgba(37,99,235,0.25);
+}
+.el-card__header {
+  background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0));
+}
+.dark .el-card__header {
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0));
+}
+
+.sidebar .el-menu {
+  --el-menu-bg-color: transparent;
+  --el-menu-text-color: rgba(226, 232, 240, 0.82);
+  --el-menu-hover-text-color: rgba(255, 255, 255, 0.96);
+  --el-menu-hover-bg-color: rgba(148, 163, 184, 0.08);
+  --el-menu-active-color: rgba(255, 255, 255, 0.96);
+}
+
+.sidebar .el-menu-item,
+.sidebar .el-sub-menu__title {
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  border-radius: 10px;
+  margin: 2px 10px;
+  transition: background-color 160ms ease, color 160ms ease, opacity 160ms ease;
+}
+
+.sidebar .el-sub-menu__title {
+  font-weight: 600;
+  color: rgba(226, 232, 240, 0.9);
+}
+
+.sidebar .el-menu-item {
+  font-weight: 500;
+}
+
+.sidebar .el-sub-menu__title:hover,
+.sidebar .el-menu-item:hover {
+  background: rgba(148, 163, 184, 0.1);
+}
+
+.sidebar .el-sub-menu.is-active > .el-sub-menu__title {
+  color: rgba(255, 255, 255, 0.96);
+}
+
+.sidebar .el-menu-item.is-active {
+  color: rgba(255, 255, 255, 0.96);
+  background: linear-gradient(90deg, rgba(37, 99, 235, 0.16), rgba(37, 99, 235, 0));
+  border-left: 3px solid var(--el-color-primary);
+}

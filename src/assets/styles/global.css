@@ -1,0 +1,112 @@
+:root {
+  --brand-900: #0b1220;
+  --brand-800: #0f1b33;
+  --brand-700: #102247;
+  --brand-600: #153469;
+  --brand-500: #1e40af;
+  --brand-400: #2563eb;
+  --brand-300: #60a5fa;
+  --surface: #f7f9fc;
+  --surface-2: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --border: #e5e7eb;
+  --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --radius: 10px;
+  --gap: 16px;
+  --el-color-primary: var(--brand-500);
+  --el-border-radius-base: 10px;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  background:
+    radial-gradient(1000px 400px at 20% -10%, rgba(37, 99, 235, 0.08), rgba(0,0,0,0) 60%),
+    radial-gradient(800px 320px at 80% -10%, rgba(30, 64, 175, 0.08), rgba(0,0,0,0) 60%),
+    var(--surface);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, PingFang SC, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+html,
+body,
+.sidebar,
+.el-main {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+.sidebar::-webkit-scrollbar,
+.el-main::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--gap);
+}
+.page-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #0b1220;
+}
+.panel {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 12px;
+}
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--gap);
+}
+.stat-card {
+  background: linear-gradient(180deg, rgba(37, 99, 235, 0.06), rgba(255,255,255,0.9));
+  border: 1px solid #e8eefc;
+  border-radius: var(--radius);
+  padding: 14px;
+}
+.stat-card .label {
+  font-size: 12px;
+  color: var(--muted);
+}
+.stat-card .value {
+  margin-top: 6px;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--brand-600);
+}
+
+.el-card {
+  border-radius: var(--radius);
+  border-color: var(--border);
+  box-shadow: var(--shadow);
+}
+.el-table {
+  --el-table-border-color: var(--border);
+}
+.el-menu {
+  --el-menu-active-color: var(--brand-500);
+}
+
+.dark {
+  --surface: #0b1220;
+  --surface-2: #0f1b33;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --border: #1e293b;
+  --shadow: 0 10px 28px rgba(0,0,0,0.35);
+  --el-color-primary: var(--brand-300);
+}
+.dark body {
+  background:
+    radial-gradient(1000px 400px at 20% -10%, rgba(37, 99, 235, 0.25), rgba(0,0,0,0) 60%),
+    radial-gradient(800px 320px at 80% -10%, rgba(30, 64, 175, 0.2), rgba(0,0,0,0) 60%),
+    var(--surface);
+}
